@@ -1,0 +1,635 @@
+/*Global styles*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+
+}
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #555;
+	font-size: 12px;
+	line-height: 160%;
+	overflow-x: hidden;
+}
+
+body a, a:hover {
+	text-decoration: none;
+}
+
+h1 {
+	font-weight: 100;
+	color: #fff;
+	font-size: 64px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 150px 20px 200px 20px;
+	text-transform: uppercase;
+	line-height: 110%;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 120%;
+	color: #333;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h3 {
+	font-size: 16px;
+	color: #333;
+	padding: 15px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 140%;
+}
+
+h4 {
+	font-size: 14px;
+	color: #333;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+a {
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+.btn {
+	background-color: transparent;
+	border: 1px solid #ccc;
+	color: #ccc;
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding: 14px 20px 12px 20px;
+	border-radius: 0;
+}
+
+.btn-submit {
+	background-color: transparent;
+	border: 2px solid #50E3C2;
+	color: #50E3C2;
+	font-size: 16px;
+	letter-spacing: 1px;
+	padding: 14px 20px 12px 20px;
+	border-radius: 0;
+	margin-top: 30px;
+}
+
+#navigation-table {
+	display: block;
+	width: 100%;
+}
+
+tbody, tr{
+	display: block;
+	width: 100%;
+}
+
+#navigation-buttons {
+	display: block;
+	width: 100%;
+}
+
+.btn-submit:hover {
+	border: 2px solid #50E3C2;
+	color: #fff;
+	background-color: #50E3C2;
+	/* Firefox */
+    -moz-transition: all .5s ease;
+    /* WebKit */
+    -webkit-transition: all .5s ease;
+    /* Opera */
+    -o-transition: all .5s ease;
+    /* Standard */
+    transition: all .5s ease;
+}
+
+.btn.right-margin {
+	margin-right: 15px;
+}
+
+.btn:hover {
+	border: 1px solid #333;
+	color: #333;
+	background-color: #f2f2f2;
+	/* Firefox */
+    -moz-transition: all .5s ease;
+    /* WebKit */
+    -webkit-transition: all .5s ease;
+    /* Opera */
+    -o-transition: all .5s ease;
+    /* Standard */
+    transition: all .5s ease;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: none;
+    outline-offset: 0;
+    border: 1px solid #333;
+	color: #333;
+}   
+
+.btn.active, .btn:active {
+    background-image: none;
+    outline: 0;
+    box-shadow: none;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+}    
+
+.container {
+	width: 980px;
+	margin: 0 auto;
+}
+
+@media (max-width: 980px) {
+	.container {
+		width: 100%;
+	}
+}
+
+
+.clearfix:after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+
+.filter-black {
+  background-color: rgba(0, 0, 0, .6);
+  height: 100%;
+  }
+
+.filter-green {
+  background-color: rgba(80, 225, 195, .8);
+  height: 100%;
+  }
+
+/*Nav*/
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 15px;
+}
+
+.navbar-brand img {
+	width: 125px;
+	height: auto;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0;
+
+}
+
+.navbar-default .navbar-nav li a {
+	color: #dcdcdc;
+}
+
+.navbar-default .navbar-nav li a:hover {
+	color: #50E3C2;
+	/* Firefox */
+    -moz-transition: all .5s ease;
+    /* WebKit */
+    -webkit-transition: all .5s ease;
+    /* Opera */
+    -o-transition: all .5s ease;
+    /* Standard */
+    transition: all .5s ease;
+
+}
+
+.navbar-default .navbar-nav>li>a:focus {
+	color: #dcdcdc;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}  
+
+.navbar-default .navbar-toggle {
+    border-color: transparent; 
+}    
+
+/*Hero Section*/
+
+.hero-background {
+	position: relative;
+	background: url(../img/laptop.jpg) no-repeat center;
+	background-size: cover;
+	overflow: hidden;
+	background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+	.hero-background {
+	background: url(../img/laptop-mobile.jpg) no-repeat center;
+	background-size: cover;
+	}
+}
+
+/*Mission Section*/
+
+.mission {
+	background-color: #50E3C2;
+	padding: 100px 0;
+}
+
+/*Services & Process Section*/
+
+.services-sec, .process-sec {
+	opacity: 0;
+	display: none;
+	margin-left: 40px;
+	padding: 0 20px 100px 20px;
+	
+	/* Firefox */
+    -moz-transition: all .5s ease-in;
+    /* WebKit */
+    -webkit-transition: all .5s ease-in;
+    /* Opera */
+    -o-transition: all .5s ease-in;
+    /* Standard */
+    transition: all .5s ease-in;
+}
+
+.services-sec.show, .process-sec.show {
+	display: block;
+
+}
+
+.services-sec.fadein, .process-sec.fadein {
+	opacity: 1;
+	-webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.toggle-buttons {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.service p {
+	text-align: center;
+	line-height: 160%;
+}
+
+.service {
+	padding-top: 50px;
+	margin: 0 auto;
+}
+
+.icon {
+	font-size: 46px;
+	text-align: center;
+	padding: 16px 0;             
+}
+
+.circle {
+	border-radius: 50%;
+	border: 2px solid #50E3C2;
+	background-color: #fff; 
+	margin: 0 auto;
+	color: #50E3C2;
+	width: 80px;
+	height: 80px;
+}
+
+.circle:hover{
+	background-color: rgba(80, 225, 195, 1);
+	color: #fff;
+	
+	/* Firefox */
+    -moz-transition: all .5s ease-in;
+    /* WebKit */
+    -webkit-transition: all .5s ease-in;
+    /* Opera */
+    -o-transition: all .5s ease-in;
+    /* Standard */
+    transition: all .5s ease-in;
+
+}
+
+/*Testimonials Section*/
+
+.testimonial-background {
+	position: relative;
+	background: url(../img/notebook.jpg) no-repeat center;
+	background-size: cover;
+	overflow: hidden;
+	background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+	.testimonial-background {
+	background: url(../img/notebook-mobile.jpg) no-repeat center;
+	background-size: cover;
+	}
+}
+
+.testimonial-quote-mark {
+	background: url(../img/quote-mark.png) no-repeat;
+	position: absolute;
+	top: -1%;
+	left: -1%;
+	height: 60px;
+	width: 60px;
+	opacity: .25;
+}
+
+.testimonial-quote p{
+	position: relative;
+	font-style: italic;
+	color: #333;
+	font-size: 21px;
+	line-height: 140%;
+	margin-top: 20px;    
+}
+
+.testimonial {
+	position: relative;
+	padding: 100px 20px;
+	margin: auto 0;
+
+}
+
+.clip-circle {
+	width: 100px;
+	height: 100px;
+  	-webkit-border-radius: 60px; /* Saf3+, Chrome */
+	border-radius: 60px; /* Opera 10.5, IE 9 */
+	/*-moz-border-radius: 30px;  Disabled for FF1+ */
+  /* OLD VALUE example: circle(245px, 140px, 50px); */
+  /* Yep, even the new clip-path has deprecated stuff. */
+  border: 2px solid rgba(255, 255, 255, .5);
+  padding: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial-photo {
+	padding-top: 4px;
+}
+
+
+.testimonial-name {
+	color: #fff;
+	font-size: 14px;
+	line-height: 140%;
+	padding-top: 20px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+
+/*Projects Section*/
+
+.projects-sec {
+	padding: 100px 20px;
+}
+
+.projects-sec p {
+}
+
+.projects-sec h2 {
+	font-size: 24px;
+	padding-bottom: 40px;
+}
+
+.thumbnail {
+	height: 290px;
+	overflow: hidden;
+	border: none;
+	border-radius: 0;
+	background-color: #333;
+	padding: 0;
+}
+
+a.thumbnail:hover {
+	border: 3px solid;
+    border-color: #50E3C2;
+}    
+
+.thumbnail img{
+	opacity: 1;
+	width: 100%;
+
+	/* Firefox */
+    -moz-transition: all .5s ease-in-out;
+    /* WebKit */
+    -webkit-transition: all .5s ease-in-out;
+    /* Opera */
+    -o-transition: all .5s ease-in-out;
+    /* Standard */
+    transition: all .5s ease-in-out;
+}
+
+.thumbnail .fade:hover {
+	opacity: .8;
+
+}
+
+.thumbnail .scale:hover {
+	-moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.modal-body img {
+	width: 100%;
+	overflow: hidden;
+}
+
+.caption {
+	margin-bottom: 20px;
+}
+
+/*Resume Section*/
+
+.resume-sec {
+	background-color: #50E3C2;
+	padding: 60px 0;
+}
+
+.resume h2 {
+	font-size: 24px;
+
+}
+
+
+
+.resume button {
+	color: #fff;
+	border: 1px solid #fff;
+	margin: 0 auto;
+	display:block;
+	position: relative;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.resume button:hover {
+	background-color: rgba(255,255,255, .5);
+}
+
+
+/*Clients Section*/
+
+.clients {
+	margin: 0 auto;
+	text-align: center;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 980px) {
+	.clients {
+	display: none;
+	}
+}
+
+.brand-logo img {
+	width: 150px;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	
+}
+
+/*Contact Section*/
+
+.contact-form {
+	padding: 100px 0;
+}
+
+input, select, textarea {
+	padding: 0;
+	width: 100%;
+
+}
+
+.form-control {
+	border-radius: 4px;
+	border: none;
+	background-color: #f2f2f2;
+
+}
+
+.form-control:focus {
+    border: 2px solid #50E3C2;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-group {
+	margin-bottom: 5px;
+}
+
+
+.ss-paragraph-text {
+	margin-top: 20px;
+}
+
+option.disabled {
+	color: #ccc;
+}
+
+
+.contact-sec .clip-circle {
+	width: 200px;
+	height: 200px;
+  	-webkit-border-radius: 120px; /* Saf3+, Chrome */
+	border-radius: 120px; /* Opera 10.5, IE 9 */
+	/*-moz-border-radius: 30px;  Disabled for FF1+ */
+  /* OLD VALUE example: circle(245px, 140px, 50px); */
+  /* Yep, even the new clip-path has deprecated stuff. */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.contact-me {
+	padding-top: 20px;
+}
+
+.contact-me p {
+	padding-top: 20px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+footer {
+	background: #333;
+	height: 240px;
+}
+
+@media (max-width: 768px) {
+	footer {
+		height: initial;
+		padding: 10px;
+	}
+}
+
+footer .items .item {
+	height: 80px;
+	padding: 10px;
+	margin: 30px;
+	background: rgba(255, 255, 255, .3);
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	footer .items .item {
+		margin: 0;
+	}
+}
+
+
+
+
+
